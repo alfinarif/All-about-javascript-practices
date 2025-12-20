@@ -89,3 +89,41 @@ console.log(bgColor);
 
 
 
+
+
+
+
+// switch
+let isAdmin = 1;
+// switch(isAdmin){
+//     case 0:
+//         console.log("You are admin");
+//         break
+
+//     case 1:
+//         console.log("You are editor");
+//         break
+    
+//     case 2:
+//         console.log("You are moderator");
+//         break
+    
+//     default:
+//         throw new Error("Invalid your error");
+// }
+
+// we can do the same thing using if else conditions
+if (isAdmin == 0){
+    console.log("You are Admin");
+}else if(isAdmin == 1){
+    console.log("You are Editor");
+}else if(isAdmin == 2){
+    console.log("You are Moderator");
+}else{
+    throw new Error("Invelid your access error!")
+}
+
+
+
+
+
