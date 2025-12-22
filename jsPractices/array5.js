@@ -88,3 +88,39 @@ const metrixSum = (metrixA, metrixB) =>{
 
 const metrixC = metrixSum(metrixA, metrixB);
 console.log(metrixC);
+
+
+
+
+
+
+
+
+
+// matrix practices
+const matrixA = [
+    [1, 1],
+    [2, 2],
+    [3, 3],
+];
+
+const matrixB = [
+    [4, 4],
+    [5, 5],
+    [6, 6],
+];
+
+const matFunc = (matrixA, matrixB) =>{
+    const result = [];
+    for (let i = 0; i < matrixA.length; i++){
+        const row = [];
+        for (let j = 0; j < matrixA[i].length; j++){
+            row.push(matrixA[i][j] + matrixB[i][j]);
+        }
+        result.push(row);
+    }
+    return result;
+}
+
+const matrixFun = matFunc(matrixA, matrixB);
+console.log(matrixFun);
