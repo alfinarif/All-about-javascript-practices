@@ -27,8 +27,24 @@ function displayTable (n) {
 // displayTable(10);
 
 
+// callback function ============
 
+// const arr = [1, 2, 3, 4];
+// let sum = 0;
+// arr.forEach((v)=>{
+//     // console.log("Value", v)
+//     sum += v;
+// })
 
+// console.log(sum);
 
+function toUpper(str, cb){
+    const upper = str.toUpperCase();
+    cb(upper);
+}
+
+toUpper("mohammad arif", (str)=>{
+    console.log(str);
+});
 
 
